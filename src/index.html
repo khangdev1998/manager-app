@@ -1,26 +1,268 @@
-@@include("partials/head-resource.html")
-<div id="home-page">
+@@include("./partials/head-resource.html")
+<div id="wrapper">
   <!-- Header -->
-  @@include("partials/header.html")
+  @@include("./partials/header.html")
 
-  <div class="container mx-auto my-5 lh-lg">
-    <h2 class="mb-2">Hello world</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minus Lorem
-    ipsum dolor sit amet consectetur adipisicing elit. Iure eligendi recusandae
-    commodi, inventore corporis quaerat! Error, vel. Voluptate vero expedita
-    mollitia, necessitatibus iure atque distinctio ipsam. Id nihil alias
-    repellat. In, aperiam veniam cum, ad fugiat quasi magni nam nostrum porro
-    quis quibusdam. Ut saepe a aliquid consequuntur dicta dolores dolorem? In
-    similique provident ullam consectetur obcaecati odio inventore odit? Unde a
-    ad laboriosam harum nulla quae nobis accusantium reprehenderit minima, esse
-    qui, animi blanditiis placeat quos vitae velit odio neque, laudantium quia.
-    Sequi voluptates ad reiciendis ex a. Aspernatur. Pariatur eius aliquam
-    deserunt praesentium itaque nostrum at aliquid architecto atque fuga. Eos
-    consequuntur ipsam, cum et magni alias voluptas quaerat molestias, quod,
-    quidem repellendus commodi id earum sint illum?
+  <div class="message-mobile alert alert-danger text-center m-3" role="alert">
+    Trang web này chưa được hỗ trợ trên các thiết bị di động. Vui lòng truy cập
+    trang web trên máy tính.
+    <i class="fa-solid fa-triangle-exclamation text-danger fs-5"></i>
   </div>
 
-  <!-- Footer -->
-  @@include("partials/footer.html")
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link py-4 px-5 active fs-5"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="home-tab-pane"
+          aria-selected="true"
+        >
+          Request
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link py-4 px-5 fs-5"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="profile-tab-pane"
+          aria-selected="false"
+        >
+          Asset
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link py-4 px-5 fs-5"
+          id="contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#contact-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="contact-tab-pane"
+          aria-selected="false"
+        >
+          Location
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link py-4 px-5 fs-5"
+          id="disabled-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#disabled-tab-pane"
+          type="button"
+          role="tab"
+          aria-controls="disabled-tab-pane"
+          aria-selected="false"
+        >
+          User
+        </button>
+      </li>
+    </ul>
+    <div class="box bg-dark-subtle">
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div
+            class="d-flex align-items-center justify-content-between gap-3 mb-4"
+          >
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle px-3 py-2"
+                type="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                Select Request Type
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Stock In</a></li>
+                <li><a class="dropdown-item" href="#">Loan</a></li>
+                <li><a class="dropdown-item" href="#">Maintance</a></li>
+                <li><a class="dropdown-item" href="#">Transfer</a></li>
+              </ul>
+            </div>
+
+            <button type="button" class="btn btn-primary px-3 py-2">
+              New Request
+            </button>
+          </div>
+
+          <div
+            class="overflow-auto mb-3"
+            style="-webkit-overflow-scrolling: touch"
+          >
+            <table
+              class="table table-striped table-bordered table-hover"
+              style="min-width: 800px"
+            >
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col" style="width: 15%">Type</th>
+                  <th scope="col" style="width: 15%">Phone Number</th>
+                  <th scope="col" style="width: 15%">User Name</th>
+                  <th scope="col" style="width: 40%">Description</th>
+                  <th scope="col" style="width: 15%">Request Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stock In</td>
+                  <td>123-456-7890</td>
+                  <td>John Doe</td>
+                  <td>
+                    Request for new stock to be added to the inventory. This
+                    request is critical as the current stock levels are running
+                    low and need immediate replenishment to meet the upcoming
+                    demand.
+                  </td>
+                  <td>2023-10-01</td>
+                </tr>
+                <tr>
+                  <td>Stock Out</td>
+                  <td>098-765-4321</td>
+                  <td>Jane Smith</td>
+                  <td>
+                    Request for stock removal from the warehouse. The items are
+                    no longer needed and are taking up valuable space that could
+                    be used for new inventory arriving next week.
+                  </td>
+                  <td>2023-10-02</td>
+                </tr>
+                <tr>
+                  <td>Transfer</td>
+                  <td>555-555-5555</td>
+                  <td>Mike Johnson</td>
+                  <td>
+                    Request for stock transfer to another location. The
+                    receiving location is experiencing high demand and requires
+                    additional stock to fulfill customer orders promptly.
+                  </td>
+                  <td>2023-10-03</td>
+                </tr>
+                <tr>
+                  <td>Disposal</td>
+                  <td>444-444-4444</td>
+                  <td>Emily Davis</td>
+                  <td>
+                    Request for stock disposal due to damage or expiration. The
+                    items have been assessed and deemed unfit for sale or use,
+                    and need to be disposed of in accordance with company
+                    policy.
+                  </td>
+                  <td>2023-10-04</td>
+                </tr>
+                <tr>
+                  <td>Stock In</td>
+                  <td>333-333-3333</td>
+                  <td>Chris Brown</td>
+                  <td>
+                    Request for new stock to be added to the inventory. This
+                    request is essential to ensure that the inventory levels are
+                    maintained and that there is no disruption in the supply
+                    chain.
+                  </td>
+                  <td>2023-10-05</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#!">1</a></li>
+              <li class="page-item"><a class="page-link" href="#!">2</a></li>
+              <li class="page-item"><a class="page-link" href="#!">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+          reprehenderit impedit minima, maiores modi earum quis praesentium
+          cumque incidunt libero ut, voluptas aliquid omnis rem. Tenetur
+          explicabo odio perferendis nam.
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          iusto. Dolorem incidunt nisi ea ratione ad aliquam perferendis dolores
+          in iure architecto enim, delectus voluptas cupiditate quia cumque
+          velit voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Ex magni nam vitae illo dolore facere! Eos totam rem architecto
+          alias ducimus, porro ab aperiam ipsa. Maiores reiciendis quaerat
+          corrupti voluptate?
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+          reprehenderit impedit minima, maiores modi earum quis praesentium
+          cumque incidunt libero ut, voluptas aliquid omnis rem. Tenetur
+          explicabo odio perferendis nam.
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          iusto. Dolorem incidunt nisi ea ratione ad aliquam perferendis dolores
+          in iure architecto enim, delectus voluptas cupiditate quia cumque
+          velit voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Ex magni nam vitae illo dolore facere! Eos totam rem architecto
+          alias ducimus, porro ab aperiam ipsa. Maiores reiciendis quaerat
+          corrupti voluptate?
+        </div>
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-test"
+          tabindex="0"
+        >
+          4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+          reprehenderit impedit minima, maiores modi earum quis praesentium
+          cumque incidunt libero ut, voluptas aliquid omnis rem. Tenetur
+          explicabo odio perferendis nam.
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+          iusto. Dolorem incidunt nisi ea ratione ad aliquam perferendis dolores
+          in iure architecto enim, delectus voluptas cupiditate quia cumque
+          velit voluptates! Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Ex magni nam vitae illo dolore facere! Eos totam rem architecto
+          alias ducimus, porro ab aperiam ipsa. Maiores reiciendis quaerat
+          corrupti voluptate?
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-@@include("partials/footer-scripts.html")
+
+@@include("./partials/footer-scripts.html")
