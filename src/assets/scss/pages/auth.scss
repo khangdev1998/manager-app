@@ -1,0 +1,217 @@
+// Login, Register
+#login-page,
+#register-page {
+  --width-columnImage: 30%;
+  background: #fffcfa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .column-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--width-columnImage);
+    height: 100%;
+    img {
+      @include size(100%);
+      object-fit: cover;
+    }
+  }
+  .form {
+    &-container {
+      margin-left: calc(
+        var(--width-columnImage) +
+          clamp(9.375rem, -1.42rem + 16.867vw, 13.75rem)
+      );
+      width: 100%;
+      max-width: 480px;
+      border-radius: 8px;
+      padding-block: 20px;
+      a {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        transition: opacity 0.1s ease;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    &-header {
+      &__caption {
+        margin-bottom: clamp(1.25rem, 0.415rem + 3.562vw, 2.125rem);
+        color: $primary-text;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 1.142rem + 1.527vw, 1.875rem);
+        line-height: 36px;
+      }
+      &__button {
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        border: 1px solid #dadada;
+        border-radius: 8px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #484848;
+      }
+    }
+    &-footer {
+      text-align: center;
+      margin-top: 24px;
+      span,
+      a {
+        font-weight: 500;
+        font-size: $fz-primary-responsive;
+        line-height: 20px;
+      }
+      span {
+        color: #484848;
+      }
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+  .or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-block: clamp(1.563rem, 1.145rem + 1.781vw, 2rem);
+    span {
+      color: #aaaa;
+      font-size: 15px;
+      font-weight: 400;
+      padding-inline: 20px;
+      line-height: 20px;
+    }
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #dadada;
+    }
+    &::before {
+      margin-right: 0.25em;
+    }
+    &::after {
+      margin-left: 0.25em;
+    }
+  }
+  form {
+    label {
+      color: #484848;
+      font-size: 15px;
+      line-height: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .form-control {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 20px;
+      &::placeholder {
+        color: #aaaaaa;
+      }
+    }
+  }
+  // Responsive All Screen
+  @include maxWidth(1023px) {
+    .column-image {
+      display: none;
+    }
+    .form-container {
+      margin-left: unset;
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+}
+
+#auth-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  .wrapper {
+    max-width: 540px;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    .content {
+      margin-top: clamp(1.25rem, 0.565rem + 2.581vw, 2.5rem);
+      &-title {
+        font-weight: 700;
+        font-size: clamp(1.5rem, 0.875rem + 2.667vw, 1.875rem);
+        line-height: 40px;
+        color: $primary-text;
+        margin-bottom: 16px;
+      }
+      &-desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $primary-text;
+        b {
+          font-weight: 500;
+        }
+      }
+      .send-back {
+        span {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: $primary-text;
+        }
+        a {
+          font-weight: 500;
+          font-size: 16px;
+          color: $primary-color !important;
+          line-height: 24px;
+          transition: opacity 0.24s ease;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      .back-to-page {
+        span,
+        a {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        span {
+          color: #484848;
+        }
+        a {
+          color: $primary-color;
+          transition: opacity 0.24s ease;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+      label {
+        color: #484848;
+        font-size: 15px;
+        line-height: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      input {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+}
