@@ -169,11 +169,11 @@ table {
   font-size: 20px;
 }
 .sidebar-menu ul > li > a i {
-  margin-right: auto;
+  margin-left: auto;
   font-size: 11px;
 }
 .sidebar-menu .submenu li a {
-  padding-right: 2.4rem !important;
+  padding-left: 2.4rem !important;
 }
 .sidebar-footer {
   border-top: 1.5px solid rgb(208, 213, 221);
@@ -310,10 +310,10 @@ table {
 }
 .alert-message i {
   color: #1677ff;
-  margin-left: 8px;
+  margin-right: 8px;
 }
 .alert-message a {
-  margin-right: 2px;
+  margin-left: 2px;
   color: #0050b3;
 }
 .alert-message a:hover {
@@ -337,8 +337,8 @@ table {
 .header {
   position: sticky;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   padding: 10px 0 20px 0;
   background-color: #eaecf0;
   display: -webkit-box;
@@ -427,7 +427,7 @@ table {
 .header .search-dropdown {
   max-width: clamp(6.25rem, -62.973rem + 81.081vw, 10rem);
   width: 100%;
-  border-left-color: #d0d5dd;
+  border-right-color: #d0d5dd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -460,7 +460,7 @@ table {
           flex: 1;
   height: 100%;
   padding-inline: 20px;
-  border-right: 1px solid #d0d5dd;
+  border-left: 1px solid #d0d5dd;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   border-radius: inherit;
@@ -528,4 +528,5 @@ table {
   color: #fff;
   font-size: 12.8px;
   cursor: pointer;
+}
 }
