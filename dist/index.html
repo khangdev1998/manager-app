@@ -54,7 +54,10 @@
 
 
 <div id="wrapper" class="d-flex justify-content-center">
-  <div class="message-mobile d-xl-none d-block alert alert-danger text-center m-3" role="alert">
+  <div
+    class="message-mobile d-xl-none d-block alert alert-danger text-center m-3"
+    role="alert"
+  >
     Trang web này chưa được hỗ trợ trên các thiết bị di động. Vui lòng truy cập
     trang web trên máy tính.
     <i class="fa-solid fa-triangle-exclamation text-danger fs-5"></i>
@@ -235,7 +238,84 @@
     <main class="main">
       <div class="tools">
         <div class="d-flex align-items-stretch flex-wrap gap-2">
-          <button class="tools-add"><i class="fa-solid fa-plus"></i></button>
+          <button
+            class="tools-add"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <!-- Modal -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" style="max-width: 1824px">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Đang làm chưa xong 😄
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body lh-lg fs-5">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
+                  molestiae est dolores. Dicta consequatur quos veritatis praesentium
+                  recusandae debitis aliquid illo. Iste saepe dolore labore voluptatem.
+                  Illo consectetur minima porro? Iure aliquid natus assumenda ea minus
+                  voluptatum. Fugiat, fuga? Blanditiis praesentium odit reiciendis?
+                  Possimus natus molestiae, non laborum accusantium modi itaque cupiditate
+                  architecto, dolore laboriosam fugit iusto, tenetur expedita. Quos.
+                  Repellendus numquam corrupti nostrum ut deserunt recusandae quasi libero
+                  beatae error repellat aspernatur, facere excepturi aliquid hic commodi.
+                  Blanditiis voluptas fugiat repellat corporis eligendi asperiores
+                  aspernatur nulla ipsa amet aliquid. Fugit deleniti pariatur, blanditiis
+                  saepe at neque, quo reiciendis tempora facere exercitationem sequi ut,
+                  asperiores beatae? Omnis non quis repellat expedita excepturi reiciendis
+                  quam sint delectus atque? Error, beatae veniam. Minus, dicta accusantium
+                  optio voluptates ratione nemo deleniti quis tempore iure hic commodi nam
+                  assumenda nostrum, vitae voluptas possimus excepturi dolorem, cum ad
+                  veritatis? Eaque laboriosam suscipit quae deleniti adipisci? Eligendi ex
+                  iure atque qui saepe adipisci vitae magni, laudantium excepturi
+                  exercitationem repellendus aliquam nulla voluptatibus ea, aperiam
+                  expedita ab dolorum itaque fugit voluptate ipsa, dolor hic illo.
+                  Aliquid, porro! Ea, deleniti assumenda esse dicta architecto laudantium.
+                  Voluptates modi totam dicta ex voluptatem. Facilis ad accusantium
+                  voluptas officia ipsam aliquid soluta dolore eum amet est. Blanditiis
+                  accusantium officiis suscipit dolores. Pariatur necessitatibus non
+                  dolorum impedit atque sapiente odit est aspernatur aut earum rem amet,
+                  eius accusantium nisi maiores perferendis quidem porro libero qui? Neque
+                  explicabo placeat nam dignissimos nihil? Dolore. Nisi aliquid molestias
+                  pariatur facilis quod delectus, inventore voluptatum odio at officia?
+                  Veniam praesentium dolorem aspernatur? Accusamus nobis voluptatum
+                  facilis ipsam. Ipsa perspiciatis asperiores dignissimos est repellat
+                  ullam consequuntur aliquid. Dolorum illum error delectus atque itaque
+                  assumenda praesentium et temporibus, consequatur minima fugiat ducimus
+                  quas nisi aliquid architecto aut quod veniam. Placeat voluptatibus
+                  mollitia libero molestiae rerum quasi aliquid nemo.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <button class="tools-button">
             <svg
               viewbox="64 64 896 896"

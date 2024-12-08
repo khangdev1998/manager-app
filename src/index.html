@@ -1,7 +1,10 @@
 @@include("./partials/head-resource.html")
 
 <div id="wrapper" class="d-flex justify-content-center">
-  <div class="message-mobile d-xl-none d-block alert alert-danger text-center m-3" role="alert">
+  <div
+    class="message-mobile d-xl-none d-block alert alert-danger text-center m-3"
+    role="alert"
+  >
     Trang web này chưa được hỗ trợ trên các thiết bị di động. Vui lòng truy cập
     trang web trên máy tính.
     <i class="fa-solid fa-triangle-exclamation text-danger fs-5"></i>
@@ -182,7 +185,16 @@
     <main class="main">
       <div class="tools">
         <div class="d-flex align-items-stretch flex-wrap gap-2">
-          <button class="tools-add"><i class="fa-solid fa-plus"></i></button>
+          <button
+            class="tools-add"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <!-- Modal -->
+          @@include("./partials/modal-editor.html")
           <button class="tools-button">
             <svg
               viewbox="64 64 896 896"
