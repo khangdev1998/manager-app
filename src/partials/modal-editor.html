@@ -2,17 +2,16 @@
 <div
   class="modal fade"
   id="staticBackdrop"
+  data-bs-backdrop="static"
   data-bs-keyboard="false"
   tabindex="-1"
   aria-labelledby="staticBackdropLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-          <span style="font-weight: 600">Thiết lập Sản phẩm</span>
-        </h1>
+        <h5 class="modal-title" id="staticBackdropLabel">Thêm sản phẩm mới</h5>
         <button
           type="button"
           class="btn-close"
@@ -20,44 +19,45 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="modal-body lh-lg fs-5" style="scrollbar-width: thin">
-        <b class="fw-bold">Đang làm chưa xong</b>
-        😄
-        <br />
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis
-        molestiae est dolores. Dicta consequatur quos veritatis praesentium
-        recusandae debitis aliquid illo. Iste saepe dolore labore voluptatem.
-        Illo consectetur minima porro? Iure aliquid natus assumenda ea minus
-        voluptatum. Fugiat, fuga? Blanditiis praesentium odit reiciendis?
-        Possimus natus molestiae, non laborum accusantium modi itaque cupiditate
-        architecto, dolore laboriosam fugit iusto, tenetur expedita. Quos.
-        Repellendus numquam corrupti nostrum ut deserunt recusandae quasi libero
-        beatae error repellat aspernatur, facere excepturi aliquid hic commodi.
-        Blanditiis voluptas fugiat repellat corporis eligendi asperiores
-        aspernatur nulla ipsa amet aliquid. Fugit deleniti pariatur, blanditiis
-        saepe at neque, quo reiciendis tempora facere exercitationem sequi ut,
-        asperiores beatae? Omnis non quis repellat expedita excepturi reiciendis
-        quam sint delectus atque? Error, beatae veniam. Minus, dicta accusantium
-        optio voluptates ratione nemo deleniti quis tempore iure hic commodi nam
-        assumenda nostrum, vitae voluptas possimus excepturi dolorem, cum ad
-        veritatis? Eaque laboriosam suscipit quae deleniti adipisci? Eligendi ex
-        iure atque qui saepe adipisci vitae magni, laudantium excepturi
-        exercitationem repellendus aliquam nulla voluptatibus ea, aperiam
-        expedita ab dolorum itaque fugit voluptate ipsa, dolor hic illo.
-        Aliquid, porro! Ea, deleniti assumenda esse dicta architecto laudantium.
-        Voluptates modi totam dicta ex voluptatem. Facilis ad accusantium
-        voluptas officia ipsam aliquid soluta dolore eum amet est. Blanditiis
-        accusantium officiis suscipit dolores. Pariatur necessitatibus non
-        dolorum impedit atque sapiente odit est aspernatur aut earum rem amet,
-        eius accusantium nisi maiores perferendis quidem porro libero qui? Neque
-        explicabo placeat nam dignissimos nihil? Dolore. Nisi aliquid molestias
-        pariatur facilis quod delectus, inventore voluptatum odio at officia?
-        Veniam praesentium dolorem aspernatur? Accusamus nobis voluptatum
-        facilis ipsam. Ipsa perspiciatis asperiores dignissimos est repellat
-        ullam consequuntur aliquid. Dolorum illum error delectus atque itaque
-        assumenda praesentium et temporibus, consequatur minima fugiat ducimus
-        quas nisi aliquid architecto aut quod veniam. Placeat voluptatibus
-        mollitia libero molestiae rerum quasi aliquid nemo.
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="productCode" class="form-label">Mã sản phẩm</label>
+            <input type="text" class="form-control" id="productCode" required />
+          </div>
+          <div class="mb-3">
+            <label for="productName" class="form-label">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="productName" required />
+          </div>
+          <div class="mb-3">
+            <label for="productCategory" class="form-label">Danh mục</label>
+            <input
+              type="text"
+              class="form-control"
+              id="productCategory"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="productPrice" class="form-label">Giá</label>
+            <input
+              type="number"
+              class="form-control"
+              id="productPrice"
+              required
+            />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer gap-2">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          <i class="fas fa-times-circle me-1"></i>
+          Đóng
+        </button>
+        <button type="button" class="btn btn-primary">
+          <i class="fas fa-save me-1"></i>
+          Lưu
+        </button>
       </div>
     </div>
   </div>

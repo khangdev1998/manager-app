@@ -44,494 +44,463 @@
     <link rel="stylesheet" href="assets/css/main.min.css" />
   </head>
   <body>
-    <div id="wrapper" class="d-flex justify-content-center">
-      <div
-        class="message-mobile d-xl-none d-block alert alert-danger text-center m-3"
-        role="alert"
-      >
-        Trang web này chưa được hỗ trợ trên các thiết bị di động. Vui lòng truy
-        cập trang web trên máy tính.
-        <i class="fa-solid fa-triangle-exclamation text-danger fs-5"></i>
-      </div>
-      <div class="sidebar">
-        <div class="sidebar-logo">
-          <span>M</span>
-          <h4>Manager</h4>
-        </div>
 
-        <div class="sidebar-menu">
-          <ul>
-            <li>
-              <a
-                class="sidebar-menu__item"
-                href="index.html"
-                data-toggle="submenu"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="1em"
-                  height="1em"
-                  fill="currentColor"
-                  viewbox="0 0 256 256"
-                  class="anticon ant-menu-item-icon"
-                >
-                  <path
-                    d="M247.59,61.22,195.83,33A8,8,0,0,0,192,32H160a8,8,0,0,0-8,8,24,24,0,0,1-48,0,8,8,0,0,0-8-8H64a8,8,0,0,0-3.84,1L8.41,61.22A15.76,15.76,0,0,0,1.82,82.48l19.27,36.81A16.37,16.37,0,0,0,35.67,128H56v80a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V128h20.34a16.37,16.37,0,0,0,14.58-8.71l19.27-36.81A15.76,15.76,0,0,0,247.59,61.22ZM35.67,112a.62.62,0,0,1-.41-.13L16.09,75.26,56,53.48V112ZM184,208H72V48h16.8a40,40,0,0,0,78.38,0H184Zm36.75-96.14a.55.55,0,0,1-.41.14H200V53.48l39.92,21.78Z"
-                  ></path>
-                </svg>
-                <span>Sản phẩm</span>
-                <i class="fa-solid fa-chevron-up"></i>
-              </a>
-              <ul class="submenu">
-                <li>
-                  <a class="active" href="#!">
-                    <span>Sản phẩm</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <span>Kiểm hàng</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <span>Nhập hàng</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <span>Xuất hàng</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <span>Hàng lỗi</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <span>Chuyển kho</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <span>Lịch sử xuất nhập</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+<div id="wrapper" class="d-flex justify-content-center">
+  <div
+    class="message-mobile d-xl-none d-block alert alert-danger text-center m-3"
+    role="alert"
+  >
+    Trang web này chưa được hỗ trợ trên các thiết bị di động. Vui lòng truy cập
+    trang web trên máy tính.
+    <i class="fa-solid fa-triangle-exclamation text-danger fs-5"></i>
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-logo">
+      <span>M</span>
+      <h4>Manager</h4>
+    </div>
 
-        <div class="sidebar-footer">
-          <button type="button">
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a class="sidebar-menu__item" href="index.html" data-toggle="submenu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
               fill="currentColor"
               viewbox="0 0 256 256"
-              class="anticon"
+              class="anticon ant-menu-item-icon"
             >
               <path
-                d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z"
+                d="M247.59,61.22,195.83,33A8,8,0,0,0,192,32H160a8,8,0,0,0-8,8,24,24,0,0,1-48,0,8,8,0,0,0-8-8H64a8,8,0,0,0-3.84,1L8.41,61.22A15.76,15.76,0,0,0,1.82,82.48l19.27,36.81A16.37,16.37,0,0,0,35.67,128H56v80a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V128h20.34a16.37,16.37,0,0,0,14.58-8.71l19.27-36.81A15.76,15.76,0,0,0,247.59,61.22ZM35.67,112a.62.62,0,0,1-.41-.13L16.09,75.26,56,53.48V112ZM184,208H72V48h16.8a40,40,0,0,0,78.38,0H184Zm36.75-96.14a.55.55,0,0,1-.41.14H200V53.48l39.92,21.78Z"
               ></path>
             </svg>
-            <span>Bảng điều khiển</span>
-          </button>
+            <span>Sản phẩm</span>
+            <i class="fa-solid fa-chevron-up"></i>
+          </a>
+          <ul class="submenu">
+            <li>
+              <a class="active" href="#!">
+                <span>Sản phẩm</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span>Kiểm hàng</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span>Nhập hàng</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span>Xuất hàng</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span>Hàng lỗi</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span>Chuyển kho</span>
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <span>Lịch sử xuất nhập</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <button type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewbox="0 0 256 256"
+          class="anticon"
+        >
+          <path
+            d="M200,40H56A16,16,0,0,0,40,56V200a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V56A16,16,0,0,0,200,40Zm0,80H136V56h64ZM120,56v64H56V56ZM56,136h64v64H56Zm144,64H136V136h64v64Z"
+          ></path>
+        </svg>
+        <span>Bảng điều khiển</span>
+      </button>
+    </div>
+  </div>
+  <div class="d-flex flex-column w-100 px-3">
+    <header class="header">
+      <div class="variation-link">
+        <a class="active" href="index.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewbox="0 0 256 256"
+            class="anticon ant-menu-item-icon"
+          >
+            <path
+              d="M247.59,61.22,195.83,33A8,8,0,0,0,192,32H160a8,8,0,0,0-8,8,24,24,0,0,1-48,0,8,8,0,0,0-8-8H64a8,8,0,0,0-3.84,1L8.41,61.22A15.76,15.76,0,0,0,1.82,82.48l19.27,36.81A16.37,16.37,0,0,0,35.67,128H56v80a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V128h20.34a16.37,16.37,0,0,0,14.58-8.71l19.27-36.81A15.76,15.76,0,0,0,247.59,61.22ZM35.67,112a.62.62,0,0,1-.41-.13L16.09,75.26,56,53.48V112ZM184,208H72V48h16.8a40,40,0,0,0,78.38,0H184Zm36.75-96.14a.55.55,0,0,1-.41.14H200V53.48l39.92,21.78Z"
+            ></path>
+          </svg>
+          <span>Sản phẩm</span>
+        </a>
+        <a href="#!">
+          <svg
+            viewbox="64 64 896 896"
+            focusable="false"
+            data-icon="home"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
+            ></path>
+          </svg>
+          <span>Mẫu mã</span>
+        </a>
+      </div>
+      <div class="search">
+        <div class="search-dropdown">
+          Tất cả
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="search-field">
+          <input
+            type="text"
+            placeholder="Mã / Tên sản phẩm / Barcode / Keyword"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
-      <div class="d-flex flex-column w-100 px-3">
-        <header class="header">
-          <div class="variation-link">
-            <a class="active" href="index.html">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewbox="0 0 256 256"
-                class="anticon ant-menu-item-icon"
-              >
-                <path
-                  d="M247.59,61.22,195.83,33A8,8,0,0,0,192,32H160a8,8,0,0,0-8,8,24,24,0,0,1-48,0,8,8,0,0,0-8-8H64a8,8,0,0,0-3.84,1L8.41,61.22A15.76,15.76,0,0,0,1.82,82.48l19.27,36.81A16.37,16.37,0,0,0,35.67,128H56v80a16,16,0,0,0,16,16H184a16,16,0,0,0,16-16V128h20.34a16.37,16.37,0,0,0,14.58-8.71l19.27-36.81A15.76,15.76,0,0,0,247.59,61.22ZM35.67,112a.62.62,0,0,1-.41-.13L16.09,75.26,56,53.48V112ZM184,208H72V48h16.8a40,40,0,0,0,78.38,0H184Zm36.75-96.14a.55.55,0,0,1-.41.14H200V53.48l39.92,21.78Z"
-                ></path>
-              </svg>
-              <span>Sản phẩm</span>
-            </a>
-            <a href="#!">
+      <div class="control">
+        <button class="control-filter">
+          Tất cả các kho
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="control-main">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewbox="0 0 256 256"
+            class="header-icon"
+          >
+            <path
+              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewbox="0 0 256 256"
+          >
+            <path
+              d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewbox="0 0 256 256"
+          >
+            <path
+              d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewbox="0 0 256 256"
+          >
+            <path
+              d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
+            ></path>
+          </svg>
+          <span class="avatar">D</span>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="tools">
+        <div class="d-flex align-items-stretch flex-wrap gap-2">
+          <button
+            class="tools-add"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <!-- Modal -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Thêm sản phẩm mới</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="productCode" class="form-label">Mã sản phẩm</label>
+                      <input type="text" class="form-control" id="productCode" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="productName" class="form-label">Tên sản phẩm</label>
+                      <input type="text" class="form-control" id="productName" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="productCategory" class="form-label">Danh mục</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="productCategory"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="productPrice" class="form-label">Giá</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="productPrice"
+                        required
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer gap-2">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    <i class="fas fa-times-circle me-1"></i>
+                    Đóng
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    <i class="fas fa-save me-1"></i>
+                    Lưu
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="tools-button">
+            <svg
+              viewbox="64 64 896 896"
+              focusable="false"
+              data-icon="sync"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M168 504.2c1-43.7 10-86.1 26.9-126 17.3-41 42.1-77.7 73.7-109.4S337 212.3 378 195c42.4-17.9 87.4-27 133.9-27s91.5 9.1 133.8 27A341.5 341.5 0 01755 268.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 003 14.1l175.7 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c0-6.7-7.7-10.5-12.9-6.3l-56.4 44.1C765.8 155.1 646.2 92 511.8 92 282.7 92 96.3 275.6 92 503.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8zm756 7.8h-60c-4.4 0-7.9 3.5-8 7.8-1 43.7-10 86.1-26.9 126-17.3 41-42.1 77.8-73.7 109.4A342.45 342.45 0 01512.1 856a342.24 342.24 0 01-243.2-100.8c-9.9-9.9-19.2-20.4-27.8-31.4l60.2-47a8 8 0 00-3-14.1l-175.7-43c-5-1.2-9.9 2.6-9.9 7.7l-.7 181c0 6.7 7.7 10.5 12.9 6.3l56.4-44.1C258.2 868.9 377.8 932 512.2 932c229.2 0 415.5-183.7 419.8-411.8a8 8 0 00-8-8.2z"
+              ></path>
+            </svg>
+            Tải lại
+          </button>
+          <button class="tools-button">
+            <svg
+              viewbox="64 64 896 896"
+              focusable="false"
+              data-icon="tags"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M483.2 790.3L861.4 412c1.7-1.7 2.5-4 2.3-6.3l-25.5-301.4c-.7-7.8-6.8-13.9-14.6-14.6L522.2 64.3c-2.3-.2-4.7.6-6.3 2.3L137.7 444.8a8.03 8.03 0 000 11.3l334.2 334.2c3.1 3.2 8.2 3.2 11.3 0zm62.6-651.7l224.6 19 19 224.6L477.5 694 233.9 450.5l311.9-311.9zm60.16 186.23a48 48 0 1067.88-67.89 48 48 0 10-67.88 67.89zM889.7 539.8l-39.6-39.5a8.03 8.03 0 00-11.3 0l-362 361.3-237.6-237a8.03 8.03 0 00-11.3 0l-39.6 39.5a8.03 8.03 0 000 11.3l243.2 242.8 39.6 39.5c3.1 3.1 8.2 3.1 11.3 0l407.3-406.6c3.1-3.1 3.1-8.2 0-11.3z"
+              ></path>
+            </svg>
+            Danh mục SP
+          </button>
+          <button class="tools-button">
+            <svg
+              viewbox="64 64 896 896"
+              focusable="false"
+              data-icon="to-top"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M885 780H165c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8zM400 325.7h73.9V664c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V325.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 171a8 8 0 00-12.6 0l-112 141.7c-4.1 5.3-.4 13 6.3 13z"
+              ></path>
+            </svg>
+            Đồng bộ Facebook
+          </button>
+          <button class="tools-button">
+            <svg
+              viewbox="64 64 896 896"
+              focusable="false"
+              data-icon="file-excel"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM514.1 580.1l-61.8-102.4c-2.2-3.6-6.1-5.8-10.3-5.8h-38.4c-2.3 0-4.5.6-6.4 1.9-5.6 3.5-7.3 10.9-3.7 16.6l82.3 130.4-83.4 132.8a12.04 12.04 0 0010.2 18.4h34.5c4.2 0 8-2.2 10.2-5.7L510 664.8l62.3 101.4c2.2 3.6 6.1 5.7 10.2 5.7H620c2.3 0 4.5-.7 6.5-1.9 5.6-3.6 7.2-11 3.6-16.6l-84-130.4 85.3-132.5a12.04 12.04 0 00-10.1-18.5h-35.7c-4.2 0-8.1 2.2-10.3 5.8l-61.2 102.3z"
+              ></path>
+            </svg>
+            Xuất Excel
+          </button>
+          <button class="tools-button">
+            <span
+              role="img"
+              aria-label="file-add"
+              class="anticon anticon-file-add"
+            >
               <svg
                 viewbox="64 64 896 896"
                 focusable="false"
-                data-icon="home"
+                data-icon="file-add"
                 fill="currentColor"
                 aria-hidden="true"
               >
                 <path
-                  d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 00-44.4 0L77.5 505a63.9 63.9 0 00-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0018.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"
+                  d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM544 472c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v108H372c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h108v108c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V644h108c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V472z"
                 ></path>
               </svg>
-              <span>Mẫu mã</span>
-            </a>
-          </div>
-          <div class="search">
-            <div class="search-dropdown">
-              Tất cả
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="search-field">
-              <input
-                type="text"
-                placeholder="Mã / Tên sản phẩm / Barcode / Keyword"
-              />
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-          </div>
-          <div class="control">
-            <button class="control-filter">
-              Tất cả các kho
-              <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <div class="control-main">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewbox="0 0 256 256"
-                class="header-icon"
-              >
-                <path
-                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
-                ></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewbox="0 0 256 256"
-              >
-                <path
-                  d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"
-                ></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewbox="0 0 256 256"
-              >
-                <path
-                  d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
-                ></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewbox="0 0 256 256"
-              >
-                <path
-                  d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"
-                ></path>
-              </svg>
-              <span class="avatar">D</span>
-            </div>
-          </div>
-        </header>
-        <main class="main">
-          <div class="tools">
-            <div class="d-flex align-items-stretch flex-wrap gap-2">
-              <button
-                class="tools-add"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-              >
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <!-- Modal -->
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="staticBackdrop"
-                data-bs-keyboard="false"
-                tabindex="-1"
-                aria-labelledby="staticBackdropLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-scrollable modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                        <span style="font-weight: 600">Thiết lập Sản phẩm</span>
-                      </h1>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div
-                      class="modal-body lh-lg fs-5"
-                      style="scrollbar-width: thin"
-                    >
-                      <b class="fw-bold">Đang làm chưa xong</b>
-                      😄
-                      <br />
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Veritatis molestiae est dolores. Dicta consequatur quos
-                      veritatis praesentium recusandae debitis aliquid illo.
-                      Iste saepe dolore labore voluptatem. Illo consectetur
-                      minima porro? Iure aliquid natus assumenda ea minus
-                      voluptatum. Fugiat, fuga? Blanditiis praesentium odit
-                      reiciendis? Possimus natus molestiae, non laborum
-                      accusantium modi itaque cupiditate architecto, dolore
-                      laboriosam fugit iusto, tenetur expedita. Quos.
-                      Repellendus numquam corrupti nostrum ut deserunt
-                      recusandae quasi libero beatae error repellat aspernatur,
-                      facere excepturi aliquid hic commodi. Blanditiis voluptas
-                      fugiat repellat corporis eligendi asperiores aspernatur
-                      nulla ipsa amet aliquid. Fugit deleniti pariatur,
-                      blanditiis saepe at neque, quo reiciendis tempora facere
-                      exercitationem sequi ut, asperiores beatae? Omnis non quis
-                      repellat expedita excepturi reiciendis quam sint delectus
-                      atque? Error, beatae veniam. Minus, dicta accusantium
-                      optio voluptates ratione nemo deleniti quis tempore iure
-                      hic commodi nam assumenda nostrum, vitae voluptas possimus
-                      excepturi dolorem, cum ad veritatis? Eaque laboriosam
-                      suscipit quae deleniti adipisci? Eligendi ex iure atque
-                      qui saepe adipisci vitae magni, laudantium excepturi
-                      exercitationem repellendus aliquam nulla voluptatibus ea,
-                      aperiam expedita ab dolorum itaque fugit voluptate ipsa,
-                      dolor hic illo. Aliquid, porro! Ea, deleniti assumenda
-                      esse dicta architecto laudantium. Voluptates modi totam
-                      dicta ex voluptatem. Facilis ad accusantium voluptas
-                      officia ipsam aliquid soluta dolore eum amet est.
-                      Blanditiis accusantium officiis suscipit dolores. Pariatur
-                      necessitatibus non dolorum impedit atque sapiente odit est
-                      aspernatur aut earum rem amet, eius accusantium nisi
-                      maiores perferendis quidem porro libero qui? Neque
-                      explicabo placeat nam dignissimos nihil? Dolore. Nisi
-                      aliquid molestias pariatur facilis quod delectus,
-                      inventore voluptatum odio at officia? Veniam praesentium
-                      dolorem aspernatur? Accusamus nobis voluptatum facilis
-                      ipsam. Ipsa perspiciatis asperiores dignissimos est
-                      repellat ullam consequuntur aliquid. Dolorum illum error
-                      delectus atque itaque assumenda praesentium et temporibus,
-                      consequatur minima fugiat ducimus quas nisi aliquid
-                      architecto aut quod veniam. Placeat voluptatibus mollitia
-                      libero molestiae rerum quasi aliquid nemo.
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </span>
+            Nhập Excel
+          </button>
+          <button class="tools-button">
+            Thao tác
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
 
-              <button class="tools-button">
-                <svg
-                  viewbox="64 64 896 896"
-                  focusable="false"
-                  data-icon="sync"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M168 504.2c1-43.7 10-86.1 26.9-126 17.3-41 42.1-77.7 73.7-109.4S337 212.3 378 195c42.4-17.9 87.4-27 133.9-27s91.5 9.1 133.8 27A341.5 341.5 0 01755 268.8c9.9 9.9 19.2 20.4 27.8 31.4l-60.2 47a8 8 0 003 14.1l175.7 43c5 1.2 9.9-2.6 9.9-7.7l.8-180.9c0-6.7-7.7-10.5-12.9-6.3l-56.4 44.1C765.8 155.1 646.2 92 511.8 92 282.7 92 96.3 275.6 92 503.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8zm756 7.8h-60c-4.4 0-7.9 3.5-8 7.8-1 43.7-10 86.1-26.9 126-17.3 41-42.1 77.8-73.7 109.4A342.45 342.45 0 01512.1 856a342.24 342.24 0 01-243.2-100.8c-9.9-9.9-19.2-20.4-27.8-31.4l60.2-47a8 8 0 00-3-14.1l-175.7-43c-5-1.2-9.9 2.6-9.9 7.7l-.7 181c0 6.7 7.7 10.5 12.9 6.3l56.4-44.1C258.2 868.9 377.8 932 512.2 932c229.2 0 415.5-183.7 419.8-411.8a8 8 0 00-8-8.2z"
-                  ></path>
-                </svg>
-                Tải lại
-              </button>
-              <button class="tools-button">
-                <svg
-                  viewbox="64 64 896 896"
-                  focusable="false"
-                  data-icon="tags"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M483.2 790.3L861.4 412c1.7-1.7 2.5-4 2.3-6.3l-25.5-301.4c-.7-7.8-6.8-13.9-14.6-14.6L522.2 64.3c-2.3-.2-4.7.6-6.3 2.3L137.7 444.8a8.03 8.03 0 000 11.3l334.2 334.2c3.1 3.2 8.2 3.2 11.3 0zm62.6-651.7l224.6 19 19 224.6L477.5 694 233.9 450.5l311.9-311.9zm60.16 186.23a48 48 0 1067.88-67.89 48 48 0 10-67.88 67.89zM889.7 539.8l-39.6-39.5a8.03 8.03 0 00-11.3 0l-362 361.3-237.6-237a8.03 8.03 0 00-11.3 0l-39.6 39.5a8.03 8.03 0 000 11.3l243.2 242.8 39.6 39.5c3.1 3.1 8.2 3.1 11.3 0l407.3-406.6c3.1-3.1 3.1-8.2 0-11.3z"
-                  ></path>
-                </svg>
-                Danh mục SP
-              </button>
-              <button class="tools-button">
-                <svg
-                  viewbox="64 64 896 896"
-                  focusable="false"
-                  data-icon="to-top"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M885 780H165c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8zM400 325.7h73.9V664c0 4.4 3.6 8 8 8h60c4.4 0 8-3.6 8-8V325.7H624c6.7 0 10.4-7.7 6.3-12.9L518.3 171a8 8 0 00-12.6 0l-112 141.7c-4.1 5.3-.4 13 6.3 13z"
-                  ></path>
-                </svg>
-                Đồng bộ Facebook
-              </button>
-              <button class="tools-button">
-                <svg
-                  viewbox="64 64 896 896"
-                  focusable="false"
-                  data-icon="file-excel"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM514.1 580.1l-61.8-102.4c-2.2-3.6-6.1-5.8-10.3-5.8h-38.4c-2.3 0-4.5.6-6.4 1.9-5.6 3.5-7.3 10.9-3.7 16.6l82.3 130.4-83.4 132.8a12.04 12.04 0 0010.2 18.4h34.5c4.2 0 8-2.2 10.2-5.7L510 664.8l62.3 101.4c2.2 3.6 6.1 5.7 10.2 5.7H620c2.3 0 4.5-.7 6.5-1.9 5.6-3.6 7.2-11 3.6-16.6l-84-130.4 85.3-132.5a12.04 12.04 0 00-10.1-18.5h-35.7c-4.2 0-8.1 2.2-10.3 5.8l-61.2 102.3z"
-                  ></path>
-                </svg>
-                Xuất Excel
-              </button>
-              <button class="tools-button">
-                <span
-                  role="img"
-                  aria-label="file-add"
-                  class="anticon anticon-file-add"
-                >
-                  <svg
-                    viewbox="64 64 896 896"
-                    focusable="false"
-                    data-icon="file-add"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0042 42h216v494zM544 472c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v108H372c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h108v108c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V644h108c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H544V472z"
-                    ></path>
-                  </svg>
-                </span>
-                Nhập Excel
-              </button>
-              <button class="tools-button">
-                Thao tác
-                <i class="fa-solid fa-chevron-down"></i>
-              </button>
-            </div>
-
-            <div class="d-flex align-items-stretch flex-wrap gap-2">
-              <button class="tools-button">
-                <i class="eye fa-regular fa-eye"></i>
-              </button>
-              <button class="tools-button">
-                Thêm lọc
-                <i class="fa-solid fa-chevron-down"></i>
-              </button>
-              <button class="tools-group">
-                <i class="save fa-regular fa-floppy-disk fs-6"></i>
-                <div class="line"></div>
-                <i class="fa-regular fa-trash-can fs-6"></i>
-              </button>
-            </div>
-          </div>
-          <div class="alert-message">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <p>
-              Bạn có thể đồng bộ sản phẩm lên Facebook Catalog để gửi sản phẩm
-              đến khách hàng. Nhấn vào nút
-              <b>Đồng bộ trang Facebook</b>
-              ở trên để bắt đầu.
-            </p>
-            <a href="#!">Tìm hiểu thêm</a>
-          </div>
-
-          <table class="table table-hover rounded-4 overflow-hidden">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Mã sản phẩm</th>
-                <th scope="col">Tên sản phẩm</th>
-                <th scope="col">Danh mục</th>
-                <th scope="col">Giá</th>
-                <th scope="col">Hành động</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>SP001</td>
-                <td>Sản phẩm A</td>
-                <td>Danh mục 1</td>
-                <td>₫50,000</td>
-                <td>
-                  <button class="btn btn-sm btn-primary me-1">Sửa</button>
-                  <button class="btn btn-sm btn-danger">Xóa</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>SP002</td>
-                <td>Sản phẩm B</td>
-                <td>Danh mục 2</td>
-                <td>₫75,000</td>
-                <td>
-                  <button class="btn btn-sm btn-primary me-1">Sửa</button>
-                  <button class="btn btn-sm btn-danger">Xóa</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>SP003</td>
-                <td>Sản phẩm C</td>
-                <td>Danh mục 1</td>
-                <td>₫100,000</td>
-                <td>
-                  <button class="btn btn-sm btn-primary me-1">Sửa</button>
-                  <button class="btn btn-sm btn-danger">Xóa</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>SP004</td>
-                <td>Sản phẩm D</td>
-                <td>Danh mục 3</td>
-                <td>₫200,000</td>
-                <td>
-                  <button class="btn btn-sm btn-primary me-1">Sửa</button>
-                  <button class="btn btn-sm btn-danger">Xóa</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>SP005</td>
-                <td>Sản phẩm E</td>
-                <td>Danh mục 2</td>
-                <td>₫150,000</td>
-                <td>
-                  <button class="btn btn-sm btn-primary me-1">Sửa</button>
-                  <button class="btn btn-sm btn-danger">Xóa</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </main>
+        <div class="d-flex align-items-stretch flex-wrap gap-2">
+          <button class="tools-button">
+            <i class="eye fa-regular fa-eye"></i>
+          </button>
+          <button class="tools-button">
+            Thêm lọc
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button class="tools-group">
+            <i class="save fa-regular fa-floppy-disk fs-6"></i>
+            <span class="line"></span>
+            <i class="fa-regular fa-trash-can fs-6"></i>
+          </button>
+        </div>
       </div>
-    </div>
+      <div class="alert-message">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p>
+          Bạn có thể đồng bộ sản phẩm lên Facebook Catalog để gửi sản phẩm đến
+          khách hàng. Nhấn vào nút
+          <b>Đồng bộ trang Facebook</b>
+          ở trên để bắt đầu.
+        </p>
+        <a href="#!">Tìm hiểu thêm</a>
+      </div>
+
+      <table class="table table-hover rounded-4 overflow-hidden">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Mã sản phẩm</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Danh mục</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>SP001</td>
+            <td>Sản phẩm A</td>
+            <td>Danh mục 1</td>
+            <td>₫50,000</td>
+            <td>
+              <button class="btn btn-sm btn-primary me-1">Sửa</button>
+              <button class="btn btn-sm btn-danger">Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>SP002</td>
+            <td>Sản phẩm B</td>
+            <td>Danh mục 2</td>
+            <td>₫75,000</td>
+            <td>
+              <button class="btn btn-sm btn-primary me-1">Sửa</button>
+              <button class="btn btn-sm btn-danger">Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>SP003</td>
+            <td>Sản phẩm C</td>
+            <td>Danh mục 1</td>
+            <td>₫100,000</td>
+            <td>
+              <button class="btn btn-sm btn-primary me-1">Sửa</button>
+              <button class="btn btn-sm btn-danger">Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>SP004</td>
+            <td>Sản phẩm D</td>
+            <td>Danh mục 3</td>
+            <td>₫200,000</td>
+            <td>
+              <button class="btn btn-sm btn-primary me-1">Sửa</button>
+              <button class="btn btn-sm btn-danger">Xóa</button>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>SP005</td>
+            <td>Sản phẩm E</td>
+            <td>Danh mục 2</td>
+            <td>₫150,000</td>
+            <td>
+              <button class="btn btn-sm btn-primary me-1">Sửa</button>
+              <button class="btn btn-sm btn-danger">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</div>
 
     <!-- Load jQuery from a CDN -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- Load Owl Carousel from a CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Load Bootstrap CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- Load validation from a CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-
+    
     <!-- Conditionally load the correct app.js file -->
-    <script>
-      if (window.location.hostname === "localhost") {
-        document.write(
-          '<script type="module" src="assets/js/app.js"><\/script>'
-        );
-      } else {
-        document.write(
-          '<script type="module" src="assets/js/app.min.js"><\/script>'
-        );
-      }
-    </script>
+  <script>
+    if (window.location.hostname === 'localhost') {
+      document.write('<script type="module" src="assets/js/app.js"><\/script>');
+    } else {
+      document.write('<script type="module" src="assets/js/app.min.js"><\/script>');
+    }
+  </script>
   </body>
 </html>
