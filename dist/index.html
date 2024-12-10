@@ -54,6 +54,7 @@
     trang web trên máy tính.
     <i class="fa-solid fa-triangle-exclamation text-danger fs-5"></i>
   </div>
+
   <div class="sidebar">
     <div class="sidebar-logo">
       <span>M</span>
@@ -63,8 +64,8 @@
     <div class="sidebar-menu">
       <ul>
         <li>
-          <a class="sidebar-menu__item" href="index.html" data-toggle="submenu">
-            <svg
+          <a class="sidebar-menu__item active" href="index.html" data-toggle="submenu">
+            <svg 
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
               height="1em"
@@ -136,6 +137,8 @@
       </button>
     </div>
   </div>
+
+
   <div class="d-flex flex-column w-100 px-3">
     <header class="header">
       <div class="variation-link">
@@ -227,6 +230,7 @@
         </div>
       </div>
     </header>
+
     <main class="main">
       <div class="tools">
         <div class="d-flex align-items-stretch flex-wrap gap-2">
@@ -261,7 +265,7 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <form>
+                  <form id="productForm">
                     <div class="mb-3">
                       <label for="productCode" class="form-label">Mã sản phẩm</label>
                       <input type="text" class="form-control" id="productCode" required />
@@ -361,11 +365,7 @@
             Xuất Excel
           </button>
           <button class="tools-button">
-            <span
-              role="img"
-              aria-label="file-add"
-              class="anticon anticon-file-add"
-            >
+            <span role="img" aria-label="file-add" class="anticon anticon-file-add">
               <svg
                 viewbox="64 64 896 896"
                 focusable="false"
@@ -401,6 +401,8 @@
           </button>
         </div>
       </div>
+
+
       <div class="alert-message">
         <i class="fa-solid fa-circle-exclamation"></i>
         <p>
@@ -423,64 +425,65 @@
             <th scope="col">Hành động</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>SP001</td>
-            <td>Sản phẩm A</td>
-            <td>Danh mục 1</td>
-            <td>₫50,000</td>
-            <td>
-              <button class="btn btn-sm btn-primary me-1">Sửa</button>
-              <button class="btn btn-sm btn-danger">Xóa</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>SP002</td>
-            <td>Sản phẩm B</td>
-            <td>Danh mục 2</td>
-            <td>₫75,000</td>
-            <td>
-              <button class="btn btn-sm btn-primary me-1">Sửa</button>
-              <button class="btn btn-sm btn-danger">Xóa</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>SP003</td>
-            <td>Sản phẩm C</td>
-            <td>Danh mục 1</td>
-            <td>₫100,000</td>
-            <td>
-              <button class="btn btn-sm btn-primary me-1">Sửa</button>
-              <button class="btn btn-sm btn-danger">Xóa</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>SP004</td>
-            <td>Sản phẩm D</td>
-            <td>Danh mục 3</td>
-            <td>₫200,000</td>
-            <td>
-              <button class="btn btn-sm btn-primary me-1">Sửa</button>
-              <button class="btn btn-sm btn-danger">Xóa</button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>SP005</td>
-            <td>Sản phẩm E</td>
-            <td>Danh mục 2</td>
-            <td>₫150,000</td>
-            <td>
-              <button class="btn btn-sm btn-primary me-1">Sửa</button>
-              <button class="btn btn-sm btn-danger">Xóa</button>
-            </td>
-          </tr>
+        <tbody id="tableBody">
+          <!-- <tr>
+             <th scope="row">1</th>
+             <td>SP001</td>
+             <td>Sản phẩm A</td>
+             <td>Danh mục 1</td>
+             <td>₫50,000</td>
+             <td>
+               <button class="btn btn-sm btn-primary me-1">Sửa</button>
+               <button class="btn btn-sm btn-danger">Xóa</button>
+             </td>
+           </tr>
+           <tr>
+             <th scope="row">2</th>
+             <td>SP002</td>
+             <td>Sản phẩm B</td>
+             <td>Danh mục 2</td>
+             <td>₫75,000</td>
+             <td>
+               <button class="btn btn-sm btn-primary me-1">Sửa</button>
+               <button class="btn btn-sm btn-danger">Xóa</button>
+             </td>
+           </tr>
+           <tr>
+             <th scope="row">3</th>
+             <td>SP003</td>
+             <td>Sản phẩm C</td>
+             <td>Danh mục 1</td>
+             <td>₫100,000</td>
+             <td>
+               <button class="btn btn-sm btn-primary me-1">Sửa</button>
+               <button class="btn btn-sm btn-danger">Xóa</button>
+             </td>
+           </tr>
+           <tr>
+             <th scope="row">4</th>
+             <td>SP004</td>
+             <td>Sản phẩm D</td>
+             <td>Danh mục 3</td>
+             <td>₫200,000</td>
+             <td>
+               <button class="btn btn-sm btn-primary me-1">Sửa</button>
+               <button class="btn btn-sm btn-danger">Xóa</button>
+             </td>
+           </tr>
+           <tr>
+             <th scope="row">5</th>
+             <td>SP005</td>
+             <td>Sản phẩm E</td>
+             <td>Danh mục 2</td>
+             <td>₫150,000</td>
+             <td>
+               <button class="btn btn-sm btn-primary me-1">Sửa</button>
+               <button class="btn btn-sm btn-danger">Xóa</button>
+             </td>
+           </tr> -->
         </tbody>
       </table>
+
     </main>
   </div>
 </div>
